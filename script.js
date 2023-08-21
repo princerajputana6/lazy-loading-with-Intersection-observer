@@ -26,8 +26,8 @@ const imgObserver = new IntersectionObserver((entries) => {
   threshold: 0.1,
 });
 
-const lazyImages = document.querySelectorAll('img[data-src]');
-  lazyImages.forEach(img => {
+
+document.querySelectorAll('img[data-src]').forEach(img => {
   imgObserver.observe(img);
 });
 
